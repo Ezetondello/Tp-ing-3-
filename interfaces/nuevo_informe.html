@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nuevo informe – JustiData Pericias</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header>
+  <div><div>JD</div><h1>Sistema de Gestión de Pericias Judiciales<br><small>JustiData Solutions S.A.</small></h1></div>
+  <div><br><b>Lucía Fernández – Operadora administrativa</b><br>Usuario: lfernandez · Sesión iniciada: 04/11/2026 21:30 <a href="#">Cerrar sesión</a></div>
+</header>
+<hr>
+<nav>
+  <a href="#">Inicio</a> | <a href="#">Pericias</a> | <a href="#">Personas</a> |
+  <a href="nuevo_informe.html">Nuevo informe</a> |
+  <a href="buscar_informes.html">Buscar informes</a> |
+  <a href="#">Honorarios y pagos</a> | <a href="#">Reportes</a>
+</nav>
+<hr>
+<main>
+
+<div>Inicio › Pericias › Nuevo informe</div>
+<h2>Carga de nuevo informe</h2>
+<p>Registrá un movimiento de la pericia. El primero se guarda como <b>Informe Pericial</b> y los siguientes como <b>Ampliación de Pericia</b>. Los campos con <span>*</span> son obligatorios.</p>
+
+<form action="informe.html" method="get">
+<div>
+  <hr><h3>1. Pericia a la que pertenece</h3>
+  <div>
+    <div><label for="org">Organismo solicitante <span>*</span></label><br>
+      <select id="org" required><option value="">Seleccionar…</option><option selected>Juzgado Civil y Comercial N.º 4</option><option>Fiscalía de Instrucción N.º 2</option><option>Estudio Jurídico Ramírez &amp; Asoc.</option></select><br><br></div>
+    <div><label for="nro">N.º de pericia <span>*</span></label><br><input id="nro" value="2026-0187" required>
+      <div>Único dentro del organismo.</div></div>
+    <div><label>&nbsp;</label><br><button type="button">Buscar pericia</button></div>
+    <div><label>Expediente</label><br><input value="EXP-45213/2026 – “Pérez, M. s/ lesiones”" readonly></div>
+    <div><label>Tipo de pericia</label><br><input value="Médica" readonly></div>
+    <div><label>Estado actual</label><br><input value="En análisis" readonly></div>
+  </div>
+</div>
+
+<div>
+  <hr><h3>2. Datos del movimiento</h3>
+  <div>
+    <div><label>Tipo de movimiento</label><br><input value="Ampliación de Pericia (movimiento N.º 2)" readonly>
+      <div>Se asigna automáticamente según el orden.</div></div>
+    <div><label for="fecha">Fecha <span>*</span></label><br><input id="fecha" type="date" value="2026-11-04" required></div>
+    <div><label for="act">Tipo de actividad <span>*</span></label><br>
+      <select id="act" required><option value="">Seleccionar…</option><option>Recepción de la solicitud</option><option>Asignación de peritos</option><option>Entrevista</option><option>Evaluación</option><option selected>Análisis de documentación</option><option>Prueba técnica</option><option>Elaboración del informe final</option></select><br><br></div>
+    <div><label for="perito">Perito responsable <span>*</span></label><br>
+      <select id="perito" required><option>Dra. Marta Gómez – Perito oficial (Medicina legal)</option><option>Dr. Pablo Ríos – Perito de parte (Traumatología)</option></select><br><br></div>
+    <div><label for="estado">Nuevo estado de la pericia</label><br>
+      <select id="estado"><option>Sin cambios (En análisis)</option><option>En proceso de evaluación</option><option>En elaboración de informe</option><option>Finalizada</option><option>Suspendida</option></select><br><br>
+      <div>Si se cambia, queda registrado en el historial de estados.</div></div>
+    <div><label for="desc">Descripción detallada <span>*</span></label><br>
+      <textarea id="desc" required placeholder="Describí la actuación realizada, los hallazgos técnicos y las conclusiones…"></textarea><br><br></div>
+  </div>
+</div>
+
+<div>
+  <hr><h3>3. Registro</h3>
+  <div>
+    <div><label>Usuario que carga</label><br><input value="lfernandez – Lucía Fernández" readonly><br><br></div>
+    <div><label>Fecha y hora de carga</label><br><input value="04/11/2026 21:43" readonly><br><br></div>
+  </div>
+</div>
+
+<div>
+  <a href="buscar_informes.html">Cancelar</a>
+  <button type="reset">Limpiar</button>
+  <button type="submit">Guardar informe</button>
+</div>
+</form>
+</main>
+<hr>
+<footer>© 2026 <b>JustiData Solutions S.A.</b> · Sistema de Gestión de Pericias Judiciales · Prototipo de interfaces – Ingeniería de Software I</footer>
+</body></html>

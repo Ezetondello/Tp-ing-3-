@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buscar informes – JustiData Pericias</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header>
+  <div><div>JD</div><h1>Sistema de Gestión de Pericias Judiciales<br><small>JustiData Solutions S.A.</small></h1></div>
+  <div><br><b>Lucía Fernández – Operadora administrativa</b><br>Usuario: lfernandez · Sesión iniciada: 04/11/2026 21:30 <a href="#">Cerrar sesión</a></div>
+</header>
+<hr>
+<nav>
+  <a href="#">Inicio</a> | <a href="#">Pericias</a> | <a href="#">Personas</a> |
+  <a href="nuevo_informe.html">Nuevo informe</a> |
+  <a href="buscar_informes.html">Buscar informes</a> |
+  <a href="#">Honorarios y pagos</a> | <a href="#">Reportes</a>
+</nav>
+<hr>
+<main>
+
+<div>Inicio › Pericias › Buscar informes</div>
+<h2>Búsqueda de informes</h2>
+<p>Filtrá por cualquier combinación de campos. Para una pericia puntual, usá Organismo + N.º de pericia.</p>
+
+<form onsubmit="return false">
+  <hr><h3>Filtros</h3>
+  <div>
+    <div><label for="o">Organismo</label><br><select id="o"><option value="">Todos</option><option>Juzgado Civil y Comercial N.º 4</option><option>Fiscalía de Instrucción N.º 2</option><option>Estudio Jurídico Ramírez &amp; Asoc.</option></select><br><br></div>
+    <div><label for="n">N.º de pericia</label><br><input id="n" placeholder="Ej.: 2026-0187"></div>
+    <div><label for="e">Expediente / palabra clave</label><br><input id="e" placeholder="Número de expediente o texto de la descripción"></div>
+    <div><label for="t">Tipo de pericia</label><br><select id="t"><option value="">Todos</option><option>Médica</option><option>Psicológica</option><option>Informática</option><option>Contable</option><option>Accidentológica</option><option>Documentológica</option></select><br><br></div>
+    <div><label for="tm">Tipo de informe</label><br><select id="tm"><option value="">Todos</option><option>Informe Pericial</option><option>Ampliación de Pericia</option></select><br><br></div>
+    <div><label for="es">Estado de la pericia</label><br><select id="es"><option value="">Todos</option><option>Solicitada</option><option>En análisis</option><option>En proceso de evaluación</option><option>En elaboración de informe</option><option>Finalizada</option><option>Suspendida</option><option>Cancelada</option><option>Impugnada</option><option>Mora</option></select><br><br></div>
+    <div><label for="p">Perito</label><br><input id="p" placeholder="Apellido o matrícula"><br><br></div>
+    <div><label for="d">Fecha desde</label><br><input id="d" type="date"><br><br></div>
+    <div><label for="h">Fecha hasta</label><br><input id="h" type="date"><br><br></div>
+  </div>
+  <div><button type="reset">Limpiar filtros</button><button type="submit">Buscar</button></div>
+</form>
+
+<div>
+  <hr><h3>Resultados (6 informes encontrados)</h3>
+  <div>
+  <table border="1" cellpadding="6" cellspacing="0" width="100%">
+    <thead><tr><th>Organismo</th><th>N.º pericia</th><th>Tipo pericia</th><th>Informe</th><th>Fecha</th><th>Perito</th><th>Estado</th><th></th></tr></thead>
+    <tbody>
+      <tr><td>Juzgado Civil y Com. N.º 4</td><td>2026-0187</td><td>Médica</td><td>Ampliación de Pericia</td><td>04/11/2026</td><td>Gómez, Marta</td><td><span>En análisis</span></td><td><a href="informe.html">Ver</a></td></tr>
+      <tr><td>Juzgado Civil y Com. N.º 4</td><td>2026-0187</td><td>Médica</td><td>Informe Pericial</td><td>21/10/2026</td><td>Gómez, Marta</td><td><span>En análisis</span></td><td><a href="informe.html">Ver</a></td></tr>
+      <tr><td>Fiscalía de Instrucción N.º 2</td><td>2026-0042</td><td>Informática</td><td>Informe Pericial</td><td>30/10/2026</td><td>Suárez, Julián</td><td><span>Finalizada</span></td><td><a href="informe.html">Ver</a></td></tr>
+      <tr><td>Estudio Jurídico Ramírez &amp; Asoc.</td><td>0315</td><td>Contable</td><td>Informe Pericial</td><td>12/10/2026</td><td>Benítez, Carla</td><td><span>Mora</span></td><td><a href="informe.html">Ver</a></td></tr>
+      <tr><td>Juzgado de Familia N.º 1</td><td>2026-0099</td><td>Psicológica</td><td>Ampliación de Pericia</td><td>08/10/2026</td><td>Molina, Sonia</td><td><span>Suspendida</span></td><td><a href="informe.html">Ver</a></td></tr>
+      <tr><td>Juzgado de Familia N.º 1</td><td>2026-0099</td><td>Psicológica</td><td>Informe Pericial</td><td>25/09/2026</td><td>Molina, Sonia</td><td><span>Suspendida</span></td><td><a href="informe.html">Ver</a></td></tr>
+    </tbody>
+  </table></div>
+  <p><span>Mostrando 1–6 de 6</span><span><a href="#">«</a> | <a href="#">1</a> | <a href="#">»</a></span></p>
+</div>
+</main>
+<hr>
+<footer>© 2026 <b>JustiData Solutions S.A.</b> · Sistema de Gestión de Pericias Judiciales · Prototipo de interfaces – Ingeniería de Software I</footer>
+</body></html>

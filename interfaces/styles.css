@@ -1,0 +1,20 @@
+/* CSS básico – paleta marrón */
+body{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#3b2a20;max-width:960px;margin:0 auto;padding:16px;background:#f5ede3;line-height:1.4}
+header,nav,footer{padding:8px 0}
+h1{font-size:22px;margin:0;color:#5a3825}
+h2{color:#5a3825;margin-bottom:4px}
+h3{color:#6f4a32;margin:10px 0}
+hr{border:0;border-top:1px solid #cdb59c;margin:14px 0}
+a{color:#8a5a3b}
+nav a{margin:0 4px}
+label{font-weight:bold;font-size:14px;color:#5a3825}
+input,select,textarea{padding:6px;margin:2px 0 6px;border:1px solid #b79a80;border-radius:4px;font:inherit;min-width:260px;background:#fffaf4;color:#3b2a20}
+textarea{width:100%;min-height:110px}
+button{padding:7px 14px;border:1px solid #5a3825;background:#6f4a32;color:#fff;border-radius:4px;cursor:pointer;font:inherit}
+button:hover{background:#5a3825}
+button[type=reset]{background:#fffaf4;color:#5a3825}
+table{border-collapse:collapse;background:#fffaf4;width:100%}
+th{background:#d9bfa3;color:#4a2e1d}
+th,td{border:1px solid #cdb59c;padding:6px;text-align:left}
+tr:nth-child(even) td{background:#f5ede3}
+footer{font-size:12px;color:#7a5f4a;text-align:center}
